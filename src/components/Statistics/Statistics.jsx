@@ -1,4 +1,3 @@
-import { Title } from "components/Title/Title"
 import css from "./Statistics.module.css"
 
 
