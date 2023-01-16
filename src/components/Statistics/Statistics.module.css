@@ -1,0 +1,17 @@
+ul {
+    padding-left: 10px;
+}
+
+.list {
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+
+
+.list span{
+    font-weight: normal;
+}

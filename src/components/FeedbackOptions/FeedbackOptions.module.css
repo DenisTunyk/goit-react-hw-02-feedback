@@ -1,0 +1,18 @@
+.containerButton{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.button {
+    padding: 5px 10px;
+    border: solid 1px;
+    font-size: 16px;
+    color: black;
+    background-color: bisque;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
