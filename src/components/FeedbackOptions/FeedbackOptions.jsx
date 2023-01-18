@@ -3,13 +3,15 @@ import PropTypes from 'prop-types';
 import css from "./FeedbackOptions.module.css"
 
 
-export const FeedbackOptions = ({onGood, onNeutral, onBad}) => {
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     return (
-            <div className={css.containerButton}>
-                <button className={css.button} type="button" onClick={onGood}> Good</button>
-                <button className={css.button} type="button" onClick={onNeutral}> Neutral </button>
-                <button className={css.button} type="button" onClick={onBad}> Bad </button>
-            </div>
+        <div className={css.containerButton}>
+            {
+                options.map((item) => 
+                    <button className={css.button} key={item} type="button" onClick={() => onLeaveFeedback(item)}>{ item }</button>
+                )
+            }
+        </div>
     )
 }
 
